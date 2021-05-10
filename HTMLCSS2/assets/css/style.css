@@ -1,0 +1,41 @@
+* {
+  text-align: center;
+  /* bunu yaparak biz hepsine merkez de yazdır olarak yaptık */
+}
+h1 {
+  color: brown;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-top: 30 px;
+}
+
+.tablo {
+  border: 3px solid rgb(230, 8, 8);
+  /* birincisi kalınlık ikincisi çizgi türü üçüncüsü de renk olur */
+  /* solid double dashed bunlar çizgi türüdür. */
+
+  border-collapse: collapse;
+  /* bu yanyana gelen çizgileri birleştirir ve tek çizgi haline getirir. */
+
+  width: 100%;
+  /* yüzdelik dilim sayfaya göre şekillendirir */
+
+  margin-left: auto;
+  margin-right: auto;
+  /* marginlerle birlikte sol ve sağdan otomatik boşluk koyarak nesneler ortaya hizalanır */
+}
+
+th,
+td {
+  border: 5 px solid rgb(15, 15, 15);
+}
+th {
+  background-color: rgb(72, 72, 90);
+}
+tr:hover {
+  background-color: brown;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(143, 114, 114);
+  /* burada te nin çift olanlkarını seç ve bu rengi uygula . bunlar pösödo komutu olarak geçiyor ve sanki fonction gibi kullanılır  */
+}

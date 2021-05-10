@@ -4,6 +4,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      * {
+        text-align: center;
+        /* burası * ile olan tersi belirtilmedikçe buraya yazdığımız geçerlidir yani default olarak buraya özellikleri yazıyoruz  */
+      }
+
+      h1 {
+        color: brown;
+        font-size: larger;
+        text-align: center;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        margin-top: 50px;
+        /*Stye etiketi ile yapılan stillendirmeler sadece bu dosya için geçerli olur
+        Eğer tüm proje için global bir stillendirme istersek harici bir .css dosyası oluşturmak gerekir ve o dosyayı html' e import etmek gerekir. 
+        */
+      }
+      p {
+        color: rgb(47, 105, 182);
+        font-size: small;
+        text-align: left;
+      }
+
+      #p1 {
+        color: black;
+      }
+
+      .p2 {
+        color: blueviolet;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <h1>TABLO EKLEME</h1>
+    <p>
+      -style attribute ile verilen özellikler aslında CSS stillendirmelerdir.
+      -Bu şekilde ki şekilllendirmeye inline stillendirme denir. -Biz head
+      içerisinde style ile yaparak buu hepsi için geçerli yaparız. -Yani CSS
+      head bölümüdür body ise HTML kodlarını içerir. -CSS de css selectorler
+      bulunmaktadır CSS dosyalarımız head içinde yazarak yapıyoruz
+    </p>
+    <!-- is bir CSS selector 'dur ve tek element şekillendirmek için kullanmılması gerekir bu id si olan elemente ulaşmak için biz #id kullanırız' -->
+
+    <p id="p1">
+      bunu deemek için yaptık ve içirisine id verdik stillendirme yaparken ben
+      onu id 'ye göre yapmam gerekir
+    </p>
+    <!-- class selector ise grup stillendirmede kullanılır ve bu class daki elemente erişmek için biz . kullanırız -->
+    <p class="p2">bu bir paragraftır</p>
+    <!-- burada aynı grup yaparsak yani aynı stillendirme grubundan yaparsak p2 ye giden özelliklerin hepsi class="p2" olan hepsi için geçerlidir Class en yaygın kullanılan CSS sellector'üdür -->
+    <p class="p2">CSS HTML 'e göre daha fazla detay içermektedir</p>
+    <h1>CSS Stillendirme</h1>
+  </body>
 </html>
