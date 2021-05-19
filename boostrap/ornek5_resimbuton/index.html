@@ -1,0 +1,61 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- * Bootstrap'i lokalden çalıştırmak için Boostrap indirerek dosyaları proje dosyamıza (Örneğin assets/lib klasörüne) ekleyebiliriz. Sonrasında ise aşağıdaki gibi bootstrap.min.css dosyasına link verebiliriz. -->
+    <!--? Ayrıca sayfanın en sonuna doğru Bootstrap JS kodlarını da kullanamk istersek <script> etiketi ile ana js kodunu eklememiz gerekir. -->
+
+    <link rel="stylesheet" href="CSS/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>DİSPLAY</title>
+  </head>
+  <body>
+    <div class="container text-center">
+      <h1 class="display-4 text-info">DISPLAY</h1>
+      <!-- display nesnelerin özelliklerini değiştiren bir class'tır -->
+      <div class="bg-danger d-sm-none">1</div>
+      <!-- burada ekran sm den itibaren görünmeyecek biz xs ekranlarda bir belitme yapmıyoruz sadece d-none yazıyoruz  -->
+      <div class="bg-warning d-none d-sm-block">2</div>
+      <!-- burada xs ekranda görünmüyor -->
+      <div class="bg-info d-none d-md-block d-lg-none">3</div>
+      <!-- burada sadece md ekranda görünme özelliğini yazdık istersek block yerine inline block inline-block veya flex yapabiliriz nasıl görünmesini istersek Burada bir akış var ilkini yazdık görünmemeye başladı sonra görünmesi gereken kısmı yazdık sonra nereye kadar görünecek onu yazıyoruz ve akışı tamamlıyoruz   -->
+      <!-- * d-felx özelliği hizalamak için kullanıır Burada yatay hizalama için justify-content- (start,end,center,between,around) kullanılır.Space around ve between arasndaki fark arasına ikiside boşluk bırakıyor ama between köşelere dayayıp boşluk bırakıyor around ise kenarlarda boşluk bırakıp o şekilde hizalıyor.-->
+      <!-- ? dikey hizalama için de align-items-(start,end ,center ) kullanılırr.  -->
+    </div>
+    <div
+      class="
+        container
+        d-flex
+        mt-3
+        bg-dark
+        text-light
+        p-2
+        justify-content-between
+      "
+    >
+      <div>
+        <i class="fas fa-phone text-warning me-1"></i>
+        <span class="d-none d-lg-inline">+905555555</span>
+        <i class="fab fa-whatsapp text-warning ms-3 me-1"></i>
+        <span class="d-none d-lg-inline">+905555555</span>
+      </div>
+      <div>
+        <i class="fab fa-twitter text-info mx-2"></i>
+        <i class="fab fa-youtube text-info mx-2"></i>
+        <i class="fab fa-facebook text-info mx-2"></i>
+        <i class="fab fa-instagram text-info mx-2"></i>
+        <span class="d-none d-lg-inline">#techproed</span>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.js"></script>
+  </body>
+</html>

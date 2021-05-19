@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin-left: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-right: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: brown;
+  text-align: center;
+}
+
+img {
+  width: 20%;
+}
+
+.kutu {
+  background-color: aquamarine;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 400px;
+}
+.kutu.üst {
+  margin-top: 20px;
+}
+.kutu.orta {
+  background-color: yellowgreen;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.kutu.alt {
+  background-color: rgb(197, 105, 72);
+  margin-top: 20px;
+}
+
+.kutu1 {
+  margin-top: 20px;
+  width: 100px;
+  height: 50px;
+  float: left;
+  /* burada biz yanyana olan nesneleri yüzde vererek sınırlandırdık ve hepsini 100 e tamamladık  */
+}
+
+.kutu1.sarı {
+  background-color: yellow;
+  width: 40%;
+}
+
+.kutu1.yeşil {
+  background-color: green;
+  width: 30%;
+}
+.kutu1.kırmızı {
+  background-color: red;
+  width: 20%;
+}
+.kutu1.mavi {
+  background-color: blue;
+  width: 10%;
+}
+
+.kutu1.mor {
+  background-color: blueviolet;
+  width: 100%;
+}
+
+/* divler bu şekilde alt alta dizilir biz de yanyana dizmek için float yapısı kullanırız  */
+
+.clearfix {
+  clear: both;
+}
+
+/* float left kullanılıp alt satıra geçildiğinde üst satır ile bir birleşme olursa clearfix adında bir hack yöntemi kullanılabilirBunun için birleşen satıra bir div eklenir  */

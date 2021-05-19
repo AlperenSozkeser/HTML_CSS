@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 20px 30px;
+  /* burada  iki tane yazdık ilki  sağ-sol , ikincisi ise üst-alt oldu 
+     Tek sayı yazrsak her taraftan verir
+     sıralaması üst sağ alt sol   top right bottom left */
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  font-weight: bold;
+  text-align: center;
+}
+
+.header {
+  background-color: red;
+  height: 50px;
+  color: aliceblue;
+  font-size: 30px;
+  padding: 50px;
+  margin-bottom: 10px;
+}
+.nav {
+  background-color: blueviolet;
+  height: 30px;
+  font-size: 20px;
+  padding: 20px;
+  margin-bottom:5px ;
+}
+
+.aside{
+background-color: yellow;
+float: left;
+width: 30%;
+height: 60%;
+margin-bottom: 5px;
+
+}
+
+.main{
+ background-color: aliceblue;
+ float: left;
+ /* PARENT OLMADIĞI ZAMAN YANYANA GELENLERDE BİZ FLOAT LEFT EKLERİZ HEPSİNE */
+ height: 60%;
+ width: 70%;
+ margin-bottom: 5px;
+
+}
+.footer{
+ padding: 15px;
+ background-color: rgb(51, 50, 50);
+ 
+
+
+}
